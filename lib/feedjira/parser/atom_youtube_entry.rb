@@ -15,7 +15,7 @@ module Feedjira
       element :updated
       element :"yt:videoId", as: :youtube_video_id
       element :"media:title", as: :media_title
-      element :"media:content", as: :media_url, value: :url
+      element :"media:content", as: :media_url, value: :url[0].to_s
       element :"media:content", as: :media_type, value: :type
       element :"media:content", as: :media_width, value: :width
       element :"media:content", as: :media_height, value: :height
