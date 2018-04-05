@@ -15,11 +15,11 @@ module Feedjira
       element :updated
       element :"yt:videoId", as: :youtube_video_id
       element :"media:title", as: :media_title
-      element :"media:content", as: :media_url, value: :url[0].to_s
+      element :"media:content", as: :media_url, value: :url
       element :"media:content", as: :media_type, value: :type
       element :"media:content", as: :media_width, value: :width
       element :"media:content", as: :media_height, value: :height
-      element :"media:thumbnail", as: :image_url, value: :url
+      element :"media:thumbnail", as: :image_url, value: :url[0].to_s
       element :"media:starRating", as: :media_star_count, value: :count
       element :"media:starRating", as: :media_star_average, value: :average
       element :"media:statistics", as: :media_views, value: :views
